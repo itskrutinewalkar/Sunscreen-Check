@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunscreen Check</title>
+</head>
+<body>
+    <% if (content < 2) { %>
+        <h1>UV Index - <%= content %></h1>
+        <p>Yayyy!! You can go stray and wild. However for Sensitive skin use SPF 10. Sunny side up!!!</p>
+   
+    <% } else if(content < 5) { %>
+        <h1>UV Index - <%= content %></h1>
+        <p>
+            Low risk of harm from unprotected sun exposure. Wearing a hat with a wide brim and sunglasses will protect your eyes. Always use a broad-spectrum sunscreen with an SPF of at least 30
+        </p>
+    
+    <% } else if(content < 7) { %>
+        <h1>UV Index - <%= content %></h1>
+        <p>
+            Moderate risk of harm.Wearing a hat with a wide brim and sunglasses will protect your eyes. Always use a broad-spectrum sunscreen with an SPF of at least 30        
+        </p>
+    
+
+   <% } else if(content < 10) { %>
+        <h1>UV Index - <%= content %></h1>
+        <p>
+            I am burning today! Definately require SPF 50, hats and shades. Reapply sunscreen constantly for best possible protection
+        </p>
+  
+    <% } else  { %>
+        <h1>UV Index - <%= content %></h1>
+        <p>
+            I am a Hotdog! It's better to stay in! But Rachel is calling me! high risk of harm from unprotected sun exposure. Fair skinned people may burn in less than 5 minutes!
+        </p>
+    <% } %>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+    <div id="description">
+        <!--Description-->
+        <p>This is a sunscreen adviser website. It allows you to determine wheather you need that extra care or you can throw your hats in the air!</p>
+    </div>
+
+    <div class="form d-flex justify-content-center align-items-center" id="form">
+        
+        <!--accept the latitude and longitude from the user-->
+        <form action="/" method="post">
+        <div>
+            <label for="latitude">Enter latitude: </label>
+            <input type="number" step="any" name="latitude" id="latitude" placeholder="°N"/>
+            <br><br>
+
+            <label for="longitude">Enter longitude: </label>
+            <input type="number" step="any" name="longitude" id="longitude" placeholder="°W"/>
+            <br><br>
+
+            <div>
+                <button id="button" class="custon-btn">Check UV!</button>
+            </div>
+            <br><br>
+        </div>
+        </form>
+    </div>
+<%- include("partials/footer.ejs") %>
