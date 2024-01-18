@@ -4,10 +4,10 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const apiKey = "";
+const apiKey = "";    //add your own api key from openuv api
 const config = {
     headers: {
-        'x-access-token' : '',
+        'x-access-token' : '',    //add your own token from openuv api
     }
 };
 
